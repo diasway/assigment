@@ -5,7 +5,7 @@ public class Teacher extends Person{
 
     public Teacher(){
     }
-    public Teacher(String name, String surname, int age, String gender, String subject, int yearsOfExperience , int salary){
+    public Teacher(String name, String surname, int age, boolean gender, String subject, int yearsOfExperience , int salary){
         super(name,surname,age,gender);
         this.subject = subject;
         this.yearsOfExperience = yearsOfExperience;

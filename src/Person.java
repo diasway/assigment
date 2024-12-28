@@ -2,12 +2,12 @@ public class Person {
     private String name;
     private String surname;
     private int age;
-    private String gender;
+    private boolean gender;
 
     public Person(){
 
     }
-    public Person(String name, String surname, int age, String gender){
+    public Person(String name, String surname, int age, boolean gender){
         this();
         this.name = name;
         this.surname = surname;
@@ -27,7 +27,7 @@ public class Person {
         return age;
     }
 
-    public String getGender() {
+    public boolean getGender() {
         return gender;
     }
 
@@ -43,12 +43,16 @@ public class Person {
         this.age = age;
     }
 
-    public void setGender(String gender) {
+    public void setGender(boolean gender) {
         this.gender = gender;
+    }
+    public String findGender(boolean gender){
+        if(gender) return "Male";
+        else  return "Female";
     }
 
     @Override
     public String toString() {
-        return "Hi, I am " + name + " " + surname + " a " + age + " year-old " + gender;
+        return "Hi, I am " + name + " " + surname + " a " + age + " year-old " + findGender(gender);
     }
 }
