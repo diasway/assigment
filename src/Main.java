@@ -28,7 +28,7 @@ public class Main {
             teacher.setSubject(tscanner.next());
             teacher.setYearsOfExperience(Integer.parseInt(tscanner.next()));
             teacher.setSalary(Integer.parseInt(tscanner.next()));
-            teacher.giveRaise(10);
+            if(teacher.getYearsOfExperience() > 10) teacher.giveRaise(10);
             school.addMember(teacher);
         }
         System.out.println(school.toString());

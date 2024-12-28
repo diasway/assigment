@@ -29,6 +29,10 @@ public class Teacher extends Person{
         this.salary = salary;
     }
 
+    public int getYearsOfExperience() {
+        return yearsOfExperience;
+    }
+
     @Override
     public String toString() {
         return super.toString() + " I teach " + subject + " my salary: " + salary;
